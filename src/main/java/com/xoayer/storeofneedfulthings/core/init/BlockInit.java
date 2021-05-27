@@ -19,8 +19,8 @@ public class BlockInit {
     public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block",
             () -> new Block(AbstractBlock.Properties.of(Material.METAL,
                     MaterialColor.LAPIS)
-                    .strength(15.0f)
-                    .harvestLevel(3)
+                    .strength(5.0f)
+                    .harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE)
                     .sound(SoundType.METAL)
             ));
