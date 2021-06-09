@@ -6,6 +6,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +25,7 @@ public class StoreOfNeedfulThings {
 
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "storeofneedfulthings";
+    public static final ItemGroup SONT_GROUP = new SONTGroup(MOD_ID);
 
     public StoreOfNeedfulThings() {
         IEventBus bus =  FMLJavaModLoadingContext.get().getModEventBus();
@@ -36,6 +39,18 @@ public class StoreOfNeedfulThings {
 
     private void setup(final FMLCommonSetupEvent event) {
 
+    }
+
+    public static class SONTGroup extends ItemGroup {
+
+        public SONTGroup(String label) {
+            super(label);
+        }
+
+        @Override
+        public ItemStack makeIcon() {
+            return ItemInit.TEST_ITEM.get().getDefaultInstance();
+        }
     }
 
 

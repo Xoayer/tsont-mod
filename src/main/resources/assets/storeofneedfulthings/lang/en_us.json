@@ -1,5 +1,8 @@
 {
   "item.storeofneedfulthings.test_item": "Test Item",
-  "block.storeofneedfulthings.test_block": "Test Block"
+  "item.storeofneedfulthings.trinket": "da trinket",
+  "block.storeofneedfulthings.test_block": "Test Block",
+  "tooltip.storeofneedfulthings.trinket.hold_shift": "§7Press §eshift§7 for more info",
+  "itemGroup.storeofneedfulthings" : "Store of Needful Things"
 
 }
